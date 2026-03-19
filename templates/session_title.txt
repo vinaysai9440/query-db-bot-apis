@@ -1,0 +1,27 @@
+Generate a concise, descriptive title for a chat session based on the user's query.
+
+REQUIREMENTS:
+- Maximum 50 characters
+- Capture the main intent/topic of the query
+- Use clear, business-friendly language
+- Avoid technical jargon when possible
+- Do not include quotes in your response
+- Make it descriptive enough to identify the session later
+
+USER QUERY:
+{query_text}
+
+EXAMPLES:
+Query: "Show me sales data for Q3 2023"
+Title: Sales Data Q3 2023
+
+Query: "What are the top performing products by revenue?"
+Title: Top Products by Revenue
+
+Query: "List all employees in the marketing department"
+Title: Marketing Department Staff
+
+Query: "How many customers do we have in each region?"
+Title: Customer Count by Region
+
+Generate a title for the user's query above. Return ONLY the title, no explanations or additional text:

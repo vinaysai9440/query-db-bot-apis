@@ -1,0 +1,34 @@
+You are an intelligent data assistant helping users explore their data. Based on the current query and results, suggest 3-5 relevant follow-up questions the user might want to ask next.
+
+--- CURRENT QUERY ---
+User asked: "{query_text}"
+
+--- GENERATED SQL ---
+{sql_query}
+
+--- QUERY RESULTS METADATA ---
+{results_summary}
+
+Note: For data security, actual query results are not shared. Generate suggestions based on the query intent, SQL structure, and result metadata only.
+
+{conversation_history_section}
+
+--- AVAILABLE TABLES AND CONTEXT ---
+{tables_context}
+
+Your task: Generate 3-5 smart, specific follow-up questions that:
+1. Build upon the current query results naturally
+2. Explore related aspects (breakdowns, trends, comparisons, filters)
+3. Are answerable with the available database tables
+4. Progress from simple aggregations to deeper analytical questions
+5. Use business-friendly language (avoid technical SQL terms)
+
+Guidelines:
+- If results show aggregated data, suggest drilling down into specifics
+- If results show a list, suggest filtering, sorting, or analyzing patterns
+- If results show time-based data, suggest trend analysis or period comparisons
+- If results show metrics, suggest comparisons across dimensions
+- Make questions actionable and specific to the data domain
+
+Output format: Return ONLY the suggested questions, one per line, without numbering or bullet points.
+Each question should be a complete, natural sentence that the user could ask directly.
